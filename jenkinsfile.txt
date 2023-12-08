@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         GIT_REPO_URL = 'https://github.com/SandraSagar/canvas.git'
-        NGINX_PATH = 'C:\jenkins extrract\nginx-1.24.0\nginx-1.24.0\HTMLdocs'
+        NGINX_PATH = 'C:\nginx\nginx-1.24.0\nginx-1.24.0\HTMLdocs'
     }
 
     stages {
