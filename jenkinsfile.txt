@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         GIT_REPO_URL = 'https://github.com/SandraSagar/canvas.git'
-        NGINX_PATH = 'C:\nginx\nginx-1.24.0\nginx-1.24.0\HTMLdocs'
+        NGINX_PATH = 'C:\\nginx\\nginx-1.24.0\\nginx-1.24.0\\HTMLdocs'
     }
 
     stages {
@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Using the Jenkins workspace variable to reference files
-                    bat 'xcopy /y "C:\jenkins folder\exp1" "%NGINX_PATH%"'
+                    bat 'xcopy /y "C:\\jenkins folder\\exp1" "%NGINX_PATH%"'
                 }
             }
         }
